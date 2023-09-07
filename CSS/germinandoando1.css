@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logoimg {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+
+}
+
+
+body {
+    background-color: white;
+}
+
+.formulario,
+.menu,
+.usuario {
+    text-decoration: none;
+    color: black;
+    margin: 50px;
+    font-size: 30px;
+}
+
+.bingreso {
+    width: 150px;
+    height: 55px;
+    border-radius: 15px;
+}
+
+.fdc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bdd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ld{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sdc{
+    margin-top: 40px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rdi{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.button {
+    --color: #00A97F;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+}
+
+
+.button::before,
+.button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+
+.button::before {
+    top: -1em;
+    left: -1em;
+}
+
+.button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.button:hover::before,
+.button:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.button:hover {
+    color: rgb(10, 25, 30);
+}
+
+.button:active {
+    filter: brightness(.8);
+}
+
+
+h1 {
+    color: white;
+    font-size: 2rem;
+    margin: 15px;
+}
+
+input:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.cuerpo {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
